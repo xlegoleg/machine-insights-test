@@ -6,7 +6,6 @@ import { Insight } from "../../../api/insightsApi.ts";
 import moment from 'moment';
 import '@testing-library/jest-dom'
 
-// Замокать данные из селектора
 jest.mock('react-redux', () => ({
   useSelector: jest.fn(),
 }));
