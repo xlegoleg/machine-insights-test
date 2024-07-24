@@ -1,0 +1,55 @@
+.diagnosticsHeading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    h6 {
+        font-size: 24px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: var(--black-text);
+    }
+}
+
+.diagnosticsTable {
+    background-color: var(--grey-color);
+    padding: 8px;
+    border-radius: 8px;
+
+    th {
+        padding: 4px 16px;
+        border: none;
+        color: var(--grey-text);
+    }
+
+    td {
+        padding: 8px 0 0 0;
+        border: none;
+    }
+
+    td:first-child,
+    th:first-child {
+        .diagnosticsTableCell {
+            border-radius: 8px 0 0 8px;
+        }
+    }
+
+    td:last-child,
+    th:last-child {
+        .diagnosticsTableCell {
+            border-radius: 0 8px 8px 0;
+        }
+    }
+}
+
+.diagnosticsTableCell {
+    height: 56px;
+    background: var(--white-color);
+    display: flex;
+    align-items: center;
+    padding: 4px 16px;
+}

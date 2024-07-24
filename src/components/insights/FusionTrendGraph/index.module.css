@@ -1,0 +1,12 @@
+.fusionTrend {
+    height: 200px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.fusionTrendWrapper {
+    background-color: var(--grey-color);
+    padding: 8px;
+    border-radius: 0 0 8px 8px;
+    margin-bottom: 34px;
+}
