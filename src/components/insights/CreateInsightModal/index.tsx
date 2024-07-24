@@ -25,7 +25,7 @@ const CreateInsightModalComponent: React.FC<InsightModalProps> = (props: Insight
   const [severity, setSeverity] = useState('');
   const dispatch = useDispatch();
 
-  const isSaveAvailable = diagnosticDate && faultType && severity;
+  const isSaveAvailable = !!diagnosticDate && !!faultType && !!severity;
 
   const handleSave = () => {
     if (isSaveAvailable) {
@@ -97,6 +97,7 @@ const CreateInsightModalComponent: React.FC<InsightModalProps> = (props: Insight
             Cancel
           </Button>
           <Button
+            color="primary"
             className='primaryButton'
             disabled={!isSaveAvailable}
             onClick={handleSave}
