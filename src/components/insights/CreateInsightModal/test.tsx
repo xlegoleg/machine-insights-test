@@ -22,7 +22,6 @@ describe('CreateInsightModal', () => {
   beforeEach(() => {
     dispatch = jest.fn();
     store = mockStore({
-      // Initial state if needed
     });
     store.dispatch = dispatch;
   });
